@@ -3,41 +3,48 @@
 <head>
   <meta charset="utf-8">  
   <title>Kha Le</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="mainStyleSheet" rel="stylesheet" href="firstStyle.css">
+  <script src="functions.js"></script>
 </head>
 <body>
     <nav id="navbar">
       <a href="index.html">Home</a>
       <a href="qualification.html">Qualification</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" class="active">Services</a>
       <a href="contact.html">Contact (AI)</a>
+      <div id="switch-container"> 
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" onclick="toggleStyleSheet()" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </nav>
 
     <div class="portfolio-grid">
-      <div class="qualification-block">
+      <div class="qualification-block portfolio-item">
         <div class="qualification-header">
           <a href="https://tamuacpc.com/home" target="_blank">
             <img src="https://tamuacpc.com/assets/logo.svg" class="qualification-icon">
           </a>  
-          <h2>Aggie Competitive Programming Club</h2>
+          <h2 class="content-text">Aggie Competitive Programming Club</h2>
         </div>
         <div id="services-main">
           <div id="services-left">
-            <h1 id="home-header">About ACPC</h1>
+            <h1 id="home-header">About</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
+            <div id="home-text" class="content-text">
               <p>Aggie Competitive Programming Club (ACPC) fosters a community for Texas A&M students interested in learning and teaching competitive programming techniques and algorithmic problem-solving skills. Through weekly meetings and semesterly programming contests, ACPC shares knowledge and creates a collaborative learning environment for A&M students.</p>
             </div>
           </div>
         </div>
         <div id="services-main">
           <div id="services-left">
-            <h1 id="home-header">Role and Involvement</h1>
+            <h1 id="home-header">Involvement</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
+            <div id="home-text" class="content-text">
               <p>As a Problemsetting Officer at ACPC, I propose and review coding problems for our weekly club meetings and the TAMU Programming Contests. My responsibilities as a Problem Setter include designing the Competitive Programming curriculum and creating practice problems to challenge our members during weekly sessions. Additionally, I contribute to organizing the TAMU programming contests, providing problem solutions to enhance the educational experience for all participants.</p>
             </div>
           </div>
@@ -47,7 +54,7 @@
             <h1 id="home-header">Experience</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
+            <div id="home-text" class="content-text">
               <p>Last semester, ACPC successfully organized the TAMU Fall 2023 programming contest. As part of the preparation team, I helped create challenging problems for the contest. We hosted the event on the Codeforces platform, with onsite participation from 101 students representing Texas A&M University and the University of Texas at Austin.</p>
             </div>
           </div>
@@ -58,15 +65,15 @@
           <a href="https://bigevent.tamu.edu/" target="_blank">
             <img src="https://bigevent.tamu.edu/wp-content/uploads/2020/07/TBE-LOGO-png-300x206.png" class="qualification-icon">
           </a>  
-          <h2>The Big Event 2023</h2>
+          <h2 class="content-text">The Big Event 2023</h2>
         </div>
         <div id="services-main">
           <div id="services-left">
-            <h1 id="home-header">About Big Event</h1>
+            <h1 id="home-header">About</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
-              <p>The Big Event at Texas A&M University is a student-led community service project known as the largest one-day, student-run service initiative in the nation. Each spring, Aggie students dedicate their time and effort to this event as a gesture of appreciation, undertaking service projects to give back to the community. The Big Event maintains a consistent message and mission: to express their heartfelt gratitude to the residents of Bryan and College Station.</p>
+            <div id="home-text" class="content-text">
+              <p>The Big Event at Texas A&M University is a student-led community service project known as the largest student-run service initiative in the nation. Each spring, Aggie students dedicate their time and effort to this event as a gesture of appreciation to the community. The Big Event maintains a consistent message and mission: to express their heartfelt gratitude to the residents of Bryan and College Station.</p>
             </div>
           </div>
         </div>
@@ -75,8 +82,8 @@
             <h1 id="home-header">Involvement</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
-              <p>During my participation in The Big Event, I was part of a team of volunteers assigned to assist an elderly homeowner in College Station. Our day began at 9 AM, armed with tools and a shared determination to create a positive impact. We engaged in a range of activities, from clearing debris to decorating the garden space. Our team worked cohesively, ensuring every detail was attended to with care and respect for the homeowner's space and preferences. By 3 PM, our collective effort had resulted in a revitalized garden, bringing a renewed sense of joy to the homeowner.</p>
+            <div id="home-text" class="content-text">
+              <p>I was part of a team of volunteers assigned to assist an elderly homeowner in College Station. We were armed with tools and a shared determination to create a positive impact. We engaged in a range of activities, from clearing debris to decorating the garden space. Our team worked cohesively, ensuring every detail was attended to with care and respect for the homeowner's space and preferences. Our collective effort had resulted in a revitalized garden, bringing a renewed sense of joy to the homeowner.</p>
             </div>
           </div>
         </div>
@@ -85,8 +92,8 @@
             <h1 id="home-header">Experience</h1>
           </div>
           <div id="services-right">
-            <div id="home-text">
-              <p>This experience was more than just a service project; it was about meeting new friends and spending time contributing to the community. I am struck by the profound sense of connection and community spirit that the experience fostered. The Big Event allowed me to demonstrate the core values of service and gratitude, contributing to an initiative that stands as a hallmark of Texas A&M's commitment to the community.</p>
+            <div id="home-text" class="content-text">
+              <p>This experience was more than just a service project; it was about meeting new friends and spending time contributing to the community. I am struck by the profound sense of connection and community spirit that the experience fostered. The Big Event allowed me to demonstrate the core values of service and gratitude.</p>
             </div>
           </div>
         </div>

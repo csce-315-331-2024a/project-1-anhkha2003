@@ -3,52 +3,77 @@
 <head>
   <meta charset="utf-8">  
   <title>Kha Le</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="mainStyleSheet" rel="stylesheet" href="firstStyle.css">
+  <script src="functions.js"></script>
 </head>
 <body>
     <nav id="navbar">
       <a href="index.html">Home</a>
       <a href="qualification.html">Qualification</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact (AI)</a>
+      <div id="switch-container"> 
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" onclick="toggleStyleSheet()" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </nav>
 
     <div class="portfolio-grid">
-      <h1 id="portfolio-header">Projects</h1>
-      <div class="qualification-block">
+      <div class="qualification-block portfolio-item">
         <div class="qualification-header">
           <img src="https://media.licdn.com/dms/image/C560BAQGvki1yffPSPQ/company-logo_200_200/0/1679537162994?e=2147483647&v=beta&t=Q6_puqysVRhvPkbFCz-Vp_85AsQkZudWpjpScXvDPUc" class="qualification-icon"><h2>LQDOJ (Le Quy Don Online Judge)</h2>
         </div>
-        <div id="content-text">
-          <h2>Description</h2>
-          <p>LQDOJ is an automated code judging platform developed based on the open-source DMOJ framework. Originally established to provide a learning environment specifically for computer science students at Le Quy Don Specialized High School in Da Nang, Vietnam, LQDOJ has expanded registration to the public, becoming a large playground for the entire community of computer science enthusiasts.</p>
-          <h2>Contribution</h2>
-          <p>I developed a frequency-based plagiarism detection system within the LQDOJ platform. My role extended to analyzing a vast dataset comprising 2.9 million programming submissions. By implementing the Aho-Corasick algorithm, I was able to reduce the analysis runtime by an impressive 70% compared to previous methods. The project resulted in a significant 60% reduction in cheating instances, maintaining the platform's integrity and promoting a fair competitive environment.</p>
-          <p>In addition, I enhanced the Chat feature of the platform. I improved the messaging experience for users by developing an algorithm for detecting spam and validating messages. Besides coding the backend, I also developed the UI for the Chat, creating a text-wrapping chat box and designing buttons for file uploads and message submissions.</p>
-          <h2>Technologies</h2>
-          <p>For the backend development and database interactions of my project, I employed Django. I implemented the Aho-Corasick algorithm in C++ and interfaced with MariaDB to evaluate user submissions. For the frontend, I used HTML/CSS and JavaScript to create a user-friendly interface.</p>
-          <p><strong>Website: </strong><a href="https://lqdoj.edu.vn/">LQDOJ</a></p>
-          <p><strong>Code: </strong><a href="https://github.com/anhkha2003/online-judge">GitHub repository</a></p>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Description</h1>
+          <p>LQDOJ is an automated code judging platform developed based on the open-source DMOJ framework. Originally established to provide a learning environment specifically for computer science students at Le Quy Don Specialized High School in Vietnam, LQDOJ has expanded registration to the public, becoming a large playground for the entire community of computer science enthusiasts.</p>
         </div>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Contribution</h1>
+          <p>I developed a frequency-based plagiarism detection system within the LQDOJ platform. My role extended to analyzing a vast dataset comprising 2.9 million programming submissions. By implementing the Aho-Corasick algorithm for efficient pattern matching, I was able to reduce the analysis runtime by an impressive 70% compared to previous methods. The project resulted in a significant 60% reduction in cheating instances, maintaining the platform's integrity and promoting a fair competitive environment.</p>
+          <p>In addition, I enhanced the Chat feature of the platform. I improved the messaging experience for users by developing an algorithm for detecting spam and validating messages. Besides coding the backend, I also developed the UI for the Chat, creating a text-wrapping chat box and designing buttons for file uploads and message submissions.</p>
+        </div>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Technologies</h1>
+          <p>For the backend development and database interactions of my project, I employed Django, a high-level Python web framework. I implemented the Aho-Corasick algorithm in C++ for efficient pattern matching. This algorithm was integrated with MariaDB to handle and evaluate the vast number of user submissions efficiently. For the frontend, I used HTML/CSS and JavaScript to create a user-friendly interface.</p>
+        </div>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Website</h1>
+          <div id="link-container"><a href="https://lqdoj.edu.vn/">LQDOJ</a></div>
+        </div>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Code</h1>
+          <div id="link-container"><a href="https://github.com/anhkha2003/online-judge">GitHub repository</a></div>
+        </div>          
       </div>
-      <div class="qualification-block">
+      <div class="qualification-block portfolio-item">
         <div class="qualification-header">
           <img src="https://cdn-icons-png.flaticon.com/512/3367/3367465.png" class="qualification-icon"><h2>Connect Four</h2>
         </div>
-        <div id="content-text">
-          <h2>Description</h2>
-          <p>This project, developed for CSCE 314, is a Java and JavaFX implementation of the Connect Four Game where a player competes against an artificial intelligence (AI) opponent. The game allows for choosing who starts first, selecting the difficulty level of the AI, and saving and loading the game state and log of moves.</p>
-          <h2>Contribution</h2>
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Description</h1>
+          <p>This project, developed for CSCE 314, is a Java and JavaFX implementation of the Connect Four Game where a player competes against an artificial intelligence (AI) opponent. The game has been designed to offer a variety of options, including the ability to choose who initiates the game, the selection of the AI's difficulty level, and the functionality to save and load the game state as well as a log of moves.</p>
+        </div> 
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Contribution</h1>
           <p>I reimagined the classic Connect Four game by creating a Java and JavaFX-based application that pits a human player against an AI opponent. My main objective was to provide a robust and interactive gaming experience that reflects the strategic depth of the traditional board game. I implemented an intuitive user interface that allows players to choose who starts first and select the AI's difficulty level, catering to both beginners and experienced users.</p>
           <p>In order to enhance the user experience, I implemented functionality enabling players to save and load game states and move logs, allowing them to review past games and continue playing without lost progress. Leveraging the data from saved games, I plan to apply machine learning techniques to enhance the AI, aiming to create an opponent that is both challenging and adaptive to the player's strategies, making the game more engaging and replayable.</p>
-          <h2>Technologies</h2>
-          <p>The project was primarily built in Java, taking advantage of the language's robustness and object-oriented capabilities to structure the game's core logic. I developed two distinct AIs using different algorithms: a Random Algorithm and the Minimax Algorithm. JavaFX was utilized to create dynamic and visually appealing user interfaces. CSS was additionally used to improve the aesthetic appeal of the user interface, ensuring a pleasant visual experience.</p>
-          <p><strong>Demo: </strong><a href="https://youtu.be/r7mqjTk_V5Q">Connect Four</a></p>
-          <p><strong>Code: </strong><a href="https://github.com/anhkha2003/Connect-Four">GitHub repository</a></p>
+        </div> 
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Technologies</h1>
+          <p>The project was primarily built in Java, taking advantage of the language's robustness and object-oriented capabilities to structure the game's core logic. I developed two distinct AIs using different algorithms: a Random Algorithm and the Minimax Algorithm. JavaFX was utilized to create dynamic and visually appealing user interfaces. CSS was additionally used to improve the aesthetic appeal of the user interface.</p>
+        </div> 
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Demo</h1>
+          <div id="link-container"><a href="https://youtu.be/r7mqjTk_V5Q">Connect Four</a></div>
+        </div> 
+        <div class="content-text portfolio-section">
+          <h1 class="portfolio-header">Code</h1>
+          <div id="link-container"><a href="https://github.com/anhkha2003/Connect-Four">GitHub repository</a></div>
         </div>
       </div>
-    </div>
     </div>
 </body>
 </html>
