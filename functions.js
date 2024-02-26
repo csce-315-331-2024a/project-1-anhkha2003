@@ -2,7 +2,7 @@ function toggleStyleSheet() {
     var styleElement = document.getElementById('mainStyleSheet');
     var currentStyle = localStorage.getItem('mainStyleSheet');
     
-    if (currentStyle == null || currentStyle == "secondStyle.css") {
+    if (currentStyle === "secondStyle.css") {
         currentStyle = "firstStyle.css";
     }
     else {
@@ -15,7 +15,7 @@ function toggleStyleSheet() {
 function loadStyleSheet() {
     var styleElement = document.getElementById('mainStyleSheet');
     var currentStyle = localStorage.getItem('mainStyleSheet');
-    if (currentStyle == null) {
+    if (currentStyle === null) {
         currentStyle = "firstStyle.css";
     }
     styleElement.setAttribute('href', currentStyle);
